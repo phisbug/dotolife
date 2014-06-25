@@ -29,11 +29,7 @@ header h1
 	margin:0;	
 }
 
-article
-{
-	float:left;
-	width:634px;		
-}
+
 
 aside
 {
@@ -64,6 +60,30 @@ aside
 }
 
 
+article
+{
+
+	overflow:hidden;		
+}
+
+section
+{
+	
+	padding-bottom:1000em;
+	margin-bottom:-1000em;	
+}
+
+.eq1 { float:left;
+		background:rgb(237,228,214); 
+		width:662px;
+		padding-top:20px;
+		}
+
+.eq2 { float:right; 
+		background:rgb(219,126,64); 
+		width:278px;}
+
+
 footer
 {
 	background:rgb(100, 98, 102);
@@ -71,5 +91,6 @@ footer
 	font-size:.6em;
 	color:white;
 	padding:0.2em;
+	text-align:center;
 	clear:both;
 }
