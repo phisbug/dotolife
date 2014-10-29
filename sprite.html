@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sprites</title>
+
+<style>
+
+	.container
+	{
+		min-width:104px;
+		max-width:104px;
+		max-height:150px;
+		min-height:150px;
+		background-color:transparent;
+		margin: 60px auto;
+		background-position: 0px 0px;
+		background-image:url(_images/gb_walk.png);	
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+    
+   <!-- <img src="_images/gb_walk.png" width="624" height="450"> -->
+    
+    </div>
+	<!-- end div container -->
+
+</body>
+
+<!-- script -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+
+var _x = 0;
+var _y = 0;
+
+	function animate()
+	{
+			$('.container:eq(0)').css('background-position', _x + 'px ' + _y + 'px');
+		
+			_x = _x - 104;
+			
+			
+			if(_x <= -624 )
+			{
+				
+				_x = 0;	
+			}
+	}
+	
+	
+	setInterval(animate, 100);	
+	
+	window.addEventListener('keydown', function(e)
+	{ 
+	
+		if(e.keyCode == 39) 
+		{
+			_y = 0;
+		}
+		else if(e.keyCode == 37)
+		{
+			_y = -150;	
+		} 
+	
+	
+	});
+	
+
+</script>
+
+</html>
