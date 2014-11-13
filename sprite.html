@@ -14,7 +14,7 @@
 		min-height:150px;
 		background-color:transparent;
 		margin: 60px auto;
-		background-position: 0px 0px;
+		background-position: 0px -301px;
 		background-image:url(_images/gb_walk.png);	
 	}
 	
@@ -48,6 +48,15 @@ var _y = 0;
 			_x = _x - 104;
 			
 			
+			if(_y <= -301)
+			{
+				if(_x <= -208 )
+				{
+					_x = 0;	
+				}	
+			}
+			
+			
 			if(_x <= -624 )
 			{
 				
@@ -56,11 +65,15 @@ var _y = 0;
 	}
 	
 	
-	setInterval(animate, 100);	
+	var an = setInterval(animate, 100);	
 	
 	window.addEventListener('keydown', function(e)
 	{ 
+		
 	
+		var _keypressed = e.keyCode;
+		console.log('you pressed: ' + _keypressed);
+		
 		if(e.keyCode == 39) 
 		{
 			_y = 0;
@@ -68,10 +81,14 @@ var _y = 0;
 		else if(e.keyCode == 37)
 		{
 			_y = -150;	
-		} 
+		}
 	
+		
+		
 	
 	});
+	
+	
 	
 
 </script>
