@@ -1,25 +1,21 @@
  
  
+ .wrap.container
+ {
+	position:relative;	 
+ }
+ 
+ nav#main-navigation 
+ {
+	display:block;	 
+ }
+ 
+ h1,h2,h3,h4{ color:#FF5; }
+ a.logo,a:hover { color:#ff5; }
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
  
  
  
@@ -28,7 +24,10 @@
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) 
 	{
-      
+		nav#main-navigation
+		{
+     	 	position:static;
+		}
     }
 
     /* Extra Small Devices, Phones */ 
@@ -39,7 +38,13 @@
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) 
-	{
+	{	
+		
+		nav#main-navigation
+		{	
+			position:absolute;
+			top:17px;
+		}
 		
     }
 
