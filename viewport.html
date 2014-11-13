@@ -7,7 +7,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>VIEW PORT - Test</title>
+	<title>VIEW PORT - Testing the responsive design</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -21,6 +21,7 @@
   ================================================== -->
   
 	<link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="_css/all_screen.css">
     <link rel="stylesheet" type="text/css" href="_css/mystyles.css">
     
 	<!--[if lt IE 9]>
@@ -39,14 +40,39 @@
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<div class="container">
+	<div class="wrap container">
     
-    	
+    	<header>
+        	<a class="logo" href="#">Logo</a>
+        </header>
+        <!-- close header tag -->
         
-      
+        <main id="content">
         	
+            <h1>Sample Heading</h1>
+            <p>Sample Paragraph</p>
+            
+        </main>
+        <!-- close main -->
+        
+        <nav id="main-navigation">
+    	<a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Image</a>
+        <a href="#">Branch</a>
+        <a href="#">About</a>
+    </nav>
+    <!-- close nav tab -->
+    
     </div>
-
+	<!-- end container -->
+    
+    
+    
+    <footer class="container">
+    	Contact <a href="#">fb</a>
+    </footer>
+    <!-- close footer -->
 
     <!-- End Document
     ================================================== -->
