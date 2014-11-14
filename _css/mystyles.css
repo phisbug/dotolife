@@ -1,19 +1,32 @@
- 
- 
- .wrap.container
+
+/*======== GENERAL STYLES =========*/
+
+html
+{
+	height:100%;
+	
+}
+
+header
+{
+	background:#a62e41;
+	padding:10px;	
+}
+
+
+#main-navigation h2 { display:none; }
+
+ .menu-icon
  {
-	position:relative;	 
+		 
  }
  
- nav#main-navigation 
+ 
+ .box
  {
-	display:block;	 
+	background:#333;
+	color:#fff;		 
  }
- 
- h1,h2,h3,h4{ color:#FF5; }
- a.logo,a:hover { color:#ff5; }
- 
- 
  
 
  
@@ -24,10 +37,7 @@
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) 
 	{
-		nav#main-navigation
-		{
-     	 	position:static;
-		}
+		
     }
 
     /* Extra Small Devices, Phones */ 
@@ -36,21 +46,47 @@
 		
     }
 
-    /* Small Devices, Tablets */
+    /* Small Devices, Tablets col-sm */
     @media only screen and (min-width : 768px) 
 	{	
 		
-		nav#main-navigation
-		{	
-			position:absolute;
-			top:17px;
-		}
+		
 		
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) 
 	{
+		
+		body
+		{
+			/* background:#8a181a; */	
+		}
+		
+		.wrap.container
+		{
+			-webkit-border-bottom-right-radius: 10px;
+			-webkit-border-bottom-left-radius: 10px;
+			-moz-border-radius-bottomright: 10px;
+			-moz-border-radius-bottomleft: 10px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			
+			background-color:#fff;
+			min-height:400px;	
+		}
+		
+		
+		footer.container
+		{
+			-webkit-border-radius: 100px/50px;
+			-moz-border-radius: 100px/50px;
+			border-radius: 100px/50px;
+			border:1px solid #fff;
+			
+				
+		}
+		
 		
     }
 
